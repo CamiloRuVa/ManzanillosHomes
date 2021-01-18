@@ -1,0 +1,598 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    min-height: 100%;
+    position: relative;
+    /* 1rem = 10xp */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*Globales*/
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: #ddf9c4;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.d-block {
+    display: block !important;
+}
+
+
+/*Header*/
+
+.main-header {
+    background-color: #73cd23;
+    align-items: center;
+    font-weight: 600;
+    padding: 2px 2rem 2px 1rem;
+    margin: 2rem 3rem;
+    border-radius: 1rem;
+}
+
+.main-header a {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.main-header a :last-of-type {
+    margin-right: 0;
+}
+
+.barra1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.links a {
+    padding: 5px;
+}
+
+.links a:hover {
+    color: #0053ad;
+    border-bottom: 1px solid #0053ad;
+}
+
+.campana-header:hover {
+    border-radius: 80%;
+    padding: 5px;
+    background-color: white;
+}
+
+.usuario {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9aea52;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    padding: .7rem;
+    border-radius: 2%;
+}
+
+.usuario a {
+    padding-left: 1rem;
+}
+
+.usuario a:hover {
+    color: #0053ad;
+}
+
+.img-usuario {
+    display: block;
+    height: 10%;
+    margin-right: -2rem;
+    padding-left: 0%;
+}
+
+.img-usuario img {
+    border-radius: 100%;
+    width: 60%;
+    background-color: white;
+    padding: 5px;
+}
+
+.logo-principal {
+    width: 80%;
+}
+
+
+/*CARUSSEL*/
+
+.slider {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    /*animation: cambio 20s infinite alternate linear;*/
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/*Carrusel*/
+
+.texto-ofertas {
+    background-color: rgb(255, 55, 55, 0.8);
+    width: 50%;
+    font-size: 3rem;
+    margin-bottom: -2rem;
+    border-radius: 0 10rem 10rem 0;
+}
+
+.carussel-anuncio {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+.texto-carrusel {
+    width: 70%;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.titulo-carrusel {
+    font-size: 2rem;
+}
+
+.datos-carrusel {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.img-anuncio {
+    width: 100%;
+}
+
+.carussel-anuncio img {
+    width: 100%;
+    height: auto;
+}
+
+.hola {
+    margin-right: -2rem;
+    z-index: 1;
+}
+
+
+/*Index*/
+
+.contenedor-principal p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.tablon {
+    border-bottom: 1px solid gray;
+}
+
+.tablon:last-of-type {
+    margin-bottom: 7rem;
+}
+
+.contenedor-anuncio {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.anuncio {
+    flex: 0 0 calc(33.3% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+    margin-bottom: 2rem;
+    height: 20rem;
+    font-size: 2rem;
+}
+
+.anuncio:hover {
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.casa1 {
+    background-image: url(../img/casas/casa1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.casa2 {
+    background-image: url(../img/casas/casa2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.casa3 {
+    background-image: url(../img/casas/casa3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.casaR1 {
+    background-image: url(../img/casas/renta1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.casaR2 {
+    background-image: url(../img/casas/renta2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.casaR3 {
+    background-image: url(../img/casas/renta3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dep1 {
+    background-image: url(../img/casas/dep1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dep2 {
+    background-image: url(../img/casas/dep2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dep3 {
+    background-image: url(../img/casas/dep3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.persona {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background-color: rgb(0, 128, 128, 0.8);
+    height: 20%;
+}
+
+.nombre {
+    color: white;
+    padding-left: 1rem;
+    font-weight: 400;
+}
+
+.precio {
+    background-color: rgb(235, 99, 21, 0.7);
+    float: right;
+    width: 50%;
+}
+
+
+/*====BUSQUEDA====*/
+
+.main {
+    width: 100%;
+}
+
+.busqueda {
+    background-image: url(../img/fondo1.jpg);
+    background-position: baseline center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formulario {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    padding: 2rem 3rem;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 2%;
+}
+
+.formulario p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+select {
+    width: 100%;
+    height: 5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+option {
+    font-size: 1.3rem;
+}
+
+.buscar {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0%;
+    width: 100%;
+    background-color: thistle;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.buscar:hover {
+    cursor: pointer;
+}
+
+
+/*Registrar/IniSesion*/
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.registrar {
+    width: 40%;
+    margin: 5rem 0rem;
+    background-color: white;
+    border: .2rem solid gray;
+    padding: 2rem;
+    display: block;
+}
+
+.formulario-registrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario-registrar p {
+    font-size: 2rem;
+}
+
+.img-registrar {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.img-registrar img {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 100%;
+    background-color: white;
+    margin-top: -5rem;
+}
+
+.campo-ingresar {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.button {
+    width: 50%;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.recordatorio {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.recordatorio a {
+    text-decoration: none;
+}
+
+.recordatorio a:hover {
+    text-decoration: underline;
+}
+
+.recordar-sesion {
+    display: flex;
+    text-align: center;
+}
+
+.recordar-sesion p {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.cambiar-contra {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.cambiar-contra:hover {
+    text-decoration: underline;
+}
+
+.advertencia_cambiar {
+    font-size: 1.3rem !important;
+    text-align: center;
+}
+
+
+/*Publicar*/
+
+.contenido-central {
+    background-color: white;
+    padding: 2rem 2rem 1px 2rem;
+    margin-bottom: 10%;
+    border-radius: 2%;
+    font-size: 2.5rem;
+    border: 1px solid gray;
+}
+
+.form-publi {
+    margin-bottom: 8rem;
+}
+
+.form-publi select {
+    width: 20%;
+}
+
+.form-publi textarea {
+    width: 100%;
+    min-height: 15rem;
+    font-size: 2rem;
+}
+
+.fotos {
+    font-size: 2rem;
+}
+
+.datos {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.rellenar {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5af23;
+    border: 1px solid black;
+    margin: 2rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+}
+
+.rellenar input {
+    width: 50%;
+}
+
+.rellenar img {
+    width: 15%;
+}
+
+.ubi {
+    width: 100%;
+}
+
+.opciones-subir {
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.btn-subir {
+    background-color: #f5af23;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    margin-left: calc(50% - 9rem);
+}
+
+.btn-subir:hover {
+    background-color: #fbd383;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 7%;
+    color: white;
+}

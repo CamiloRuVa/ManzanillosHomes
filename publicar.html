@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manzanillo's Houses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="barra1">
+            <div class="img">
+                <a href="/"><img class="logo-principal" src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="barra2">
+                <div class="links">
+                    <a href="/">Inicio</a>
+                    <a href="busqueda.html">Busqueda</a>
+                    <a href="favoritos.html">Favoritos</a>
+                    <a href="publicar.html">Publicar</a>
+                    <a href="/" class="campana-header"><img src="img/campana.png" alt="campana"></a>
+                </div>
+                <div class="usuario">
+                    <div class="img-usuario"><img src="img/usuario.png" alt="usuario"></div>
+                    <a href="IniSesion.html">Iniciar Sesion</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <h2>Publica tu Casa o Departamento</h2>
+        <div class="contenido-central">
+            <form action="php/publicar.php" method="POST" enctype="multipart/form-data" class="form-publi">
+                <b><p>Fotos</p></b>
+                <input type="file" id="archivo[]" name="archivo[]" class="fotos" multiple required>
+                <b><p>Estado</p></b>
+                <div class="opciones-subir">
+                    <div class="venta">
+                        <input type="radio" name="estado" value="venta" required> Venta
+                    </div>
+                    <div class="renta">
+                        <input type="radio" name="estado" value="renta" required> Renta
+                    </div>
+                </div>
+                <b><p>Ubicación</p></b>
+                <input type="text" required class="ubi" name="ubicacion">
+                <b><p>Descripción</p></b>
+                <textarea name="descripcion" id="descripcion"></textarea>
+                <div class="datos">
+                    <div class="rellenar">
+                        <img src="img/inodoro.png" alt="">
+                        <b><p>Baños</p></b>
+                        <input type="number" name="banos" min="0" max="10">
+                    </div>
+                    <div class="rellenar">
+                        <img src="img/cama.png" alt="">
+                        <b><p>Cuartos</p></b>
+                        <input type="number" name="cuartos" min="0" max="10">
+                    </div>
+                    <div class="rellenar">
+                        <img src="img/coche.png" alt="">
+                        <b><p>Cocheras</p></b>
+                        <input type="number" name="cocheras" min="0" max="10">
+                    </div>
+                </div>
+                <input class="btn-subir" type="submit" value="Subir">
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="/">ola</a>
+    </footer>
+
+</body>
+
+</html>

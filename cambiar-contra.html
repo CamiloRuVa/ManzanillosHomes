@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manzanillo's Houses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="barra1">
+            <div class="img">
+                <a href="/"><img class="logo-principal" src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="barra2">
+                <div class="links">
+                    <a href="/">Inicio</a>
+                    <a href="busqueda.html">Busqueda</a>
+                    <a href="favoritos.html">Favoritos</a>
+                    <a href="publicar.html">Publicar</a>
+                    <a href="/" class="campana-header"><img src="img/campana.png" alt="campana"></a>
+                </div>
+                <div class="usuario">
+                    <div class="img-usuario"><img src="img/usuario.png" alt="usuario"></div>
+                    <a href="IniSesion.html">Iniciar Sesion</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="registrar columnas-10">
+            <div class="formulario-registrar">
+                <div class="img-registrar">
+                    <img src="img/usuario1.png" alt="">
+                </div>
+                <form class="formulario-form" action="php/envio_contra.php" method="POST">
+                    <p class="advertencia_cambiar">*Ingresa tu correo y te enviaremos un codigo necesario para los pasos siguientes.</p>
+                    <p>Correo:</p>
+                    <input class="campo-ingresar" type="email" name="correo" required>
+                    <input class="button" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="/">ola</a>
+    </footer>
+</body>
+
+</html>
